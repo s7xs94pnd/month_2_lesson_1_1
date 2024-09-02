@@ -34,6 +34,6 @@ public class Bicycle {
         return "bike name: "+name+
                 "\nWheel size :"+wheelSize+
                 "\nFrame :"+frame+
-                "\nShop "+shop.getinfo();
+                "\n\nShop "+shop.getinfo();
     };
 }
