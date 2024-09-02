@@ -28,13 +28,6 @@ public class MountainBike extends Bicycle {
         }
     }
 
-    public boolean isSuspension() {
-        return suspension;
-    }
-
-    public int getGears() {
-        return gears;
-    }
 
     public void shiftGears() {
         gears++;
@@ -42,11 +35,11 @@ public class MountainBike extends Bicycle {
     }
     public void shiftGears(int chosenGear) {
         gears = chosenGear;
-        System.out.println("shifted Gear to "+gears);
+        System.out.println("shifted to chosenGear "+gears);
     }
 
     @Override
     public String getInfo() {
-        return super.getInfo()+"\nsuspension Turn :"+suspension+"\nGear :"+gears;
+        return super.getInfo()+"\nsuspension Turn :"+(suspension?"ON":"OFF")+"\nGear :"+gears;
     }
 }

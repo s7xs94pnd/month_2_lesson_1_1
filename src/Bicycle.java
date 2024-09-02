@@ -27,11 +27,11 @@ public class Bicycle {
         this.shop = shop;
     }
     public void pedaling(){
-        System.out.println(this.getName()+"bike is pedaling");
+        System.out.println(this.getName()+" bike is pedaling");
     }
 
     public String getInfo(){
-        return "bike name :"+name+
+        return "bike name: "+name+
                 "\nWheel size :"+wheelSize+
                 "\nFrame :"+frame+
                 "\nShop "+shop.getinfo();
